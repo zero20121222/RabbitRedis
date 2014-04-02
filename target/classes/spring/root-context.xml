@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2012 杭州端点网络科技有限公司
+  -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util" xmlns:task="http://www.springframework.org/schema/task"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
+
+
+    <!-- register spring bean validator -->
+    <context:component-scan base-package="com.rabbit.test" />
+    <context:annotation-config />
+
+    <!-- load properties -->
+    <util:properties id="app" location="classpath:app.properties"/>
+    <!-- aop support -->
+    <aop:aspectj-autoproxy/>
+    <!-- use annotation to drive schedule task -->
+    <task:annotation-driven/>
+
+
+    <!-- import global application context
+    <import resource="classpath*:/spring/redis-context.xml"/>
+     -->
+
+    <!-- 添加rabbit的配置文件管理 -->
+    <import resource="classpath*:/spring/rabbit-product.xml"/>
+    <!-- import resources depend on different profile
+    <beans profile="dev">
+        <import resource="classpath*:/spring/mysql-persistence-context.xml"/>
+    </beans>
+     -->
+</beans>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+    http://www.springframework.org/schema/rabbit http://www.springframework.org/schema/rabbit/spring-rabbit-1.0.xsd">
+
+    <!-- 配置spring的队列监听接口(创建监听处理对象) -->
+    <bean id="consumeMessage" class="com.rabbit.test.QueueOneListener" />
+
+    <!-- 连接服务配置  -->
+    <rabbit:connection-factory id="connectionFactory" host="127.0.0.1" port="5672" username="guest" password="guest"/>
+
+    <bean id="jacksonConverter" class="org.springframework.amqp.support.converter.Jackson2JsonMessageConverter"/>
+
+    <!-- 设置rabbit的管理 -->
+    <rabbit:admin connection-factory="connectionFactory"/>
+
+    <!-- 消费者监听队列动态信息 -->
+    <rabbit:listener-container connection-factory="connectionFactory" message-converter="jacksonConverter" acknowledge="none">
+        <rabbit:listener ref="consumeMessage" method="listenOne" queue-names="queue_one" />
+        <rabbit:listener ref="consumeMessage" method="listenTwo" queue-names="queue_tow" />
+        <rabbit:listener ref="consumeMessage" method="listenThree" queue-names="queue_three" />
+        <rabbit:listener ref="consumeMessage" method="listenThree1" queue-names="queue_three" />
+    </rabbit:listener-container>
+
+</beans>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--redis 配置-->
+    <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+        <property name="maxTotal" value="${redisMaxTotal}"/>
+        <property name="maxIdle" value="${redisMaxIdle}"/>
+        <property name="maxWaitMillis" value="${redisMaxWaitMillis}"/>
+        <property name="testOnBorrow" value="${redisTestOnBorrow}"/>
+    </bean>
+
+    <beans profile="dev,test,prepub, prod">
+        <bean id="jedisPool" class="redis.clients.jedis.JedisPool">
+            <constructor-arg index="0" ref="jedisPoolConfig"/>
+            <constructor-arg index="1" value="${redisHost}"/>
+            <constructor-arg index="2" value="${redisPort}" type="int"/>
+        </bean>
+    </beans>
+</beans>

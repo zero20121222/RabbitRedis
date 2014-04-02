@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/rabbit
+       http://www.springframework.org/schema/rabbit/spring-rabbit.xsd">
+
+    <bean id="rabbitUtil" class="com.rabbit.util.RabbitUtil"/>
+    <!-- 这个是一个生产者的信息的配置  -->
+    <!-- 连接服务配置  -->
+    <rabbit:connection-factory id="connectionFactory" addresses="127.0.0.1:5672" publisher-confirms="true"/>
+
+    <!-- spring amqp默认的是jackson 的一个插件,目的将生产者生产的数据转换为json存入消息队列 -->
+    <bean id="jsonMessageConverter"  class="org.springframework.amqp.support.converter.Jackson2JsonMessageConverter"></bean>
+
+    <!-- spring template声明（作为一个代理-》也就是代理模式中的代理）-->
+    <rabbit:template exchange="my-mq-exchange" id="amqpTemplate"  connection-factory="connectionFactory"  message-converter="jsonMessageConverter"/>
+
+    <!-- 设置rabbit的管理 -->
+    <rabbit:admin connection-factory="connectionFactory"/>
+
+    <!-- queue 队列声明-->
+    <rabbit:queue id="queue_one" durable="true" auto-delete="false" exclusive="false" name="queue_one"/>
+    <rabbit:queue id="queue_tow" durable="true" auto-delete="false" exclusive="false" name="queue_tow"/>
+    <rabbit:queue id="queue_three" durable="true" auto-delete="false" exclusive="false" name="queue_three"/>
+
+
+    <!-- 将队列绑定到交换路由同时与key绑定 -->
+    <rabbit:fanout-exchange name="my-mq-exchange" durable="true" auto-delete="false" id="my-mq-exchange">
+        <rabbit:bindings>
+            <rabbit:binding queue="queue_one"/>
+            <rabbit:binding queue="queue_tow"/>
+        </rabbit:bindings>
+    </rabbit:fanout-exchange>
+
+    <!-- 将与通道绑定的事件与队列绑定 -->
+    <rabbit:fanout-exchange name="mq-exchange2" durable="true" auto-delete="false" id="mq-exchange2">
+        <rabbit:bindings>
+            <rabbit:binding queue="queue_one"/>
+            <rabbit:binding queue="queue_tow"/>
+            <rabbit:binding queue="queue_three"/>
+        </rabbit:bindings>
+    </rabbit:fanout-exchange>
+</beans>

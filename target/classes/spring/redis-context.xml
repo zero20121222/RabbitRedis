@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+       ">
+    <!-- 实现导入properties配置文件 -->
+    <util:properties id="app" location="classpath:app.properties"/>
 
     <!--redis 配置-->
     <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
-        <property name="maxTotal" value="${redisMaxTotal}"/>
-        <property name="maxIdle" value="${redisMaxIdle}"/>
-        <property name="maxWaitMillis" value="${redisMaxWaitMillis}"/>
-        <property name="testOnBorrow" value="${redisTestOnBorrow}"/>
+        <property name="maxTotal" value="5"/>
+        <property name="maxIdle" value="2"/>
+        <property name="maxWaitMillis" value="10000"/>
+        <property name="testOnBorrow" value="true"/>
     </bean>
 
-    <beans profile="dev,test,prepub, prod">
-        <bean id="jedisPool" class="redis.clients.jedis.JedisPool">
-            <constructor-arg index="0" ref="jedisPoolConfig"/>
-            <constructor-arg index="1" value="${redisHost}"/>
-            <constructor-arg index="2" value="${redisPort}" type="int"/>
-        </bean>
-    </beans>
+    <bean id="jedisPool" class="redis.clients.jedis.JedisPool">
+        <constructor-arg index="0" ref="jedisPoolConfig"/>
+        <constructor-arg index="1" value="127.0.0.1"/>
+        <constructor-arg index="2" value="6379" type="int"/>
+    </bean>
 </beans>

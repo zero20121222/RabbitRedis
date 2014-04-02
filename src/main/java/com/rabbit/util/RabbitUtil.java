@@ -23,9 +23,13 @@ public class RabbitUtil {
     }
 
     public <T> void sendReliable(String exchange, T message) {
-        rabbitTemplate.convertAndSend(exchange,"", message, new MessagePostProcessor() {
+        //实现将message通过json转换&将对象发送
+        //convertAndSend(String exchange, String routingKey, Object message, MessagePostProcessor messagePostProcessor, CorrelationData correlationData)
+        rabbitTemplate.convertAndSend(exchange, "", message, new MessagePostProcessor() {
+            //实现message操作处理实现
             @Override
             public Message postProcessMessage(Message message) throws AmqpException {
+                //设置信息的属性信息&设置发送模式（PERSISTENT:连续的）
                 message.getMessageProperties().setDeliveryMode(MessageDeliveryMode.PERSISTENT);
                 return message;
             }

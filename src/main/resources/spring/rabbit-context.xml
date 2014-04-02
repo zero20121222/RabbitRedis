@@ -21,6 +21,7 @@
         <rabbit:listener ref="consumeMessage" method="listenTwo" queue-names="queue_tow" />
         <rabbit:listener ref="consumeMessage" method="listenThree" queue-names="queue_three" />
         <rabbit:listener ref="consumeMessage" method="listenThree1" queue-names="queue_three" />
+        <rabbit:listener ref="consumeMessage" method="sendRedis" queue-names="queue_three" />
     </rabbit:listener-container>
 
 </beans>

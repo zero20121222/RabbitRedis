@@ -69,10 +69,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RabbitTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RabbitTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rabbit/test/RabbitTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="30" selection-start="639" selection-end="639" vertical-scroll-proportion="3.3297873" vertical-offset="107" max-vertical-offset="800">
+            <state line="22" column="30" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0" vertical-offset="227" max-vertical-offset="820">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,38 +80,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RabbitTemplate.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/1.2.1.RELEASE/spring-rabbit-1.2.1.RELEASE-sources.jar!/org/springframework/amqp/rabbit/core/RabbitTemplate.java">
+      <file leaf-file-name="JedisTemplate.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rabbit/util/JedisTemplate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="70" selection-start="3013" selection-end="3013" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="16080">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QueueOneListener.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rabbit/test/QueueOneListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="28" selection-start="493" selection-end="505" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rabbit-product.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring/rabbit-product.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="26" selection-start="1594" selection-end="1594" vertical-scroll-proportion="0.0" vertical-offset="427" max-vertical-offset="1020">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/app.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="36" selection-start="696" selection-end="716" vertical-scroll-proportion="0.0" vertical-offset="367" max-vertical-offset="960">
-              <folding />
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1920">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,7 +94,40 @@
       <file leaf-file-name="redis-context.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/spring/redis-context.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="520">
+            <state line="23" column="8" selection-start="1141" selection-end="1141" vertical-scroll-proportion="-6.0" vertical-offset="280" max-vertical-offset="580">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RabbitUtil.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rabbit/util/RabbitUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="0" selection-start="737" selection-end="737" vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="880">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1050#1419#0" expanded="true" />
+                <element signature="e#1408#1409#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueueOneListener.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rabbit/test/QueueOneListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="0" selection-start="825" selection-end="825" vertical-scroll-proportion="0.39291736" vertical-offset="447" max-vertical-offset="1040">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/app.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="19" selection-start="360" selection-end="365" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="960">
               <folding />
             </state>
           </provider>
@@ -137,7 +145,7 @@
       <file leaf-file-name="root-context.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/spring/root-context.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="53" selection-start="1665" selection-end="1665" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="920">
+            <state line="40" column="0" selection-start="1801" selection-end="1801" vertical-scroll-proportion="-17.4" vertical-offset="365" max-vertical-offset="920">
               <folding />
             </state>
           </provider>
@@ -155,7 +163,7 @@
       <file leaf-file-name="rabbit-context.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/spring/rabbit-context.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="66" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="620">
+            <state line="23" column="89" selection-start="1536" selection-end="1547" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="640">
               <folding />
             </state>
           </provider>
@@ -171,26 +179,27 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/app.properties" />
         <option value="$PROJECT_DIR$/RabbitRedis.iml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/servlet-context.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/redis-context.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/rabbit/test/QueueOneLitener.java" />
         <option value="$PROJECT_DIR$/src/main/java/RabbitTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/RabbitTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/RabbitTest2.java" />
         <option value="$PROJECT_DIR$/src/main/resources/context-test.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/root-context.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rabbit/util/RabbitUtil.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/test-context.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/rabbit-product.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/root-context.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/app.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/redis-context.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rabbit/util/RabbitUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rabbit/util/JedisTemplate.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rabbit/test/RabbitTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rabbit/test/QueueOneListener.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/rabbit-context.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rabbit/test/QueueOneListener.java" />
       </list>
     </option>
   </component>
@@ -209,7 +218,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1365" />
+    <option name="x" value="2731" />
     <option name="y" value="-7" />
     <option name="width" value="1368" />
     <option name="height" value="776" />
@@ -318,32 +327,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RabbitRedis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RabbitRedis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1095,12 +1078,12 @@
       <workItem from="1396268951768" duration="9054000" />
       <workItem from="1396315522871" duration="8923000" />
       <workItem from="1396353228769" duration="4152000" />
-      <workItem from="1396402386744" duration="10753000" />
+      <workItem from="1396402386744" duration="14874000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33256000" />
+    <option name="totallyTimeSpent" value="37377000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1123,8 +1106,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1365" y="-7" width="1368" height="776" extended-state="6" />
-    <editor active="false" />
+    <frame x="2731" y="-7" width="1368" height="776" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
@@ -1148,7 +1131,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33509833" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.77006173" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2777778" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1169,7 +1152,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.7160494" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2777778" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1209,28 +1192,12 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="161" column="10" selection-start="6060" selection-end="6060" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6020">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rabbit/util/RabbitUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="14" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#861#1149#0" expanded="true" />
-            <element signature="e#1138#1139#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rabbit/test/QueueOneListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="520">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1288,7 +1255,9 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rabbit/test/QueueOneListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="35" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="520">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1358,7 +1327,9 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rabbit/test/QueueOneListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="29" selection-start="140" selection-end="156" vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="320">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1439,13 +1410,6 @@
         <state line="5" column="117" selection-start="343" selection-end="343" vertical-scroll-proportion="0.16863406" vertical-offset="0" max-vertical-offset="593" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="59" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1800">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/1.2.1.RELEASE/spring-rabbit-1.2.1.RELEASE.jar!/org/springframework/amqp/rabbit/config/spring-rabbit-1.2.xsd">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="20" selection-start="2501" selection-end="2686" vertical-scroll-proportion="0.4362069" vertical-offset="827" max-vertical-offset="22160">
@@ -1484,31 +1448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/redis-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="520">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/root-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="53" selection-start="1665" selection-end="1665" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="920">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rabbit/util/RabbitUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="31" selection-start="662" selection-end="662" vertical-scroll-proportion="0.0" vertical-offset="203" max-vertical-offset="800">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#861#1149#0" expanded="true" />
-            <element signature="e#1138#1139#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring/test-context.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="91" selection-start="1170" selection-end="1170" vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="500">
@@ -1516,16 +1455,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/app.properties">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/1.2.1.RELEASE/spring-rabbit-1.2.1.RELEASE-sources.jar!/org/springframework/amqp/rabbit/core/RabbitTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="36" selection-start="696" selection-end="716" vertical-scroll-proportion="0.0" vertical-offset="367" max-vertical-offset="960">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="16080">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/1.2.1.RELEASE/spring-rabbit-1.2.1.RELEASE-sources.jar!/org/springframework/amqp/rabbit/core/RabbitTemplate.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="70" selection-start="3013" selection-end="3013" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="16080">
+        <state line="10" column="59" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/app.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="19" selection-start="360" selection-end="365" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/1.2.1.RELEASE/spring-amqp-1.2.1.RELEASE-sources.jar!/org/springframework/amqp/core/MessageDeliveryMode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1040">
           <folding />
         </state>
       </provider>
@@ -1537,23 +1490,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rabbit/test/QueueOneListener.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rabbit/util/JedisTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="28" selection-start="493" selection-end="505" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1920">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/root-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="0" selection-start="1801" selection-end="1801" vertical-scroll-proportion="-17.4" vertical-offset="365" max-vertical-offset="920">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rabbit/util/RabbitUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="737" selection-end="737" vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="880">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1050#1419#0" expanded="true" />
+            <element signature="e#1408#1409#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring/rabbit-context.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="66" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="620">
+        <state line="23" column="89" selection-start="1536" selection-end="1547" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="640">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/redis-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="8" selection-start="1141" selection-end="1141" vertical-scroll-proportion="-6.0" vertical-offset="280" max-vertical-offset="580">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rabbit/test/RabbitTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="30" selection-start="639" selection-end="639" vertical-scroll-proportion="3.3297873" vertical-offset="107" max-vertical-offset="800">
+        <state line="22" column="30" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0" vertical-offset="227" max-vertical-offset="820">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rabbit/test/QueueOneListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="0" selection-start="825" selection-end="825" vertical-scroll-proportion="0.39291736" vertical-offset="447" max-vertical-offset="1040">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

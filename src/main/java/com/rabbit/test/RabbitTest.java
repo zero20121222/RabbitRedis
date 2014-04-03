@@ -1,6 +1,7 @@
 package com.rabbit.test;
 
 import com.rabbit.util.RabbitUtil;
+import com.rabbit.util.RedisLock;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

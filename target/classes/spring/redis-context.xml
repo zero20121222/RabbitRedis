@@ -8,7 +8,7 @@
     <!-- 实现导入properties配置文件 -->
     <util:properties id="app" location="classpath:app.properties"/>
 
-    <!--redis 配置-->
+    <!-- jedisPoolConfig连接线程配置 -->
     <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
         <property name="maxTotal" value="5"/>
         <property name="maxIdle" value="2"/>
@@ -16,9 +16,15 @@
         <property name="testOnBorrow" value="true"/>
     </bean>
 
+    <!-- jedisPool连接处理类 -->
     <bean id="jedisPool" class="redis.clients.jedis.JedisPool">
         <constructor-arg index="0" ref="jedisPoolConfig"/>
         <constructor-arg index="1" value="127.0.0.1"/>
         <constructor-arg index="2" value="6379" type="int"/>
+    </bean>
+
+    <!-- jedisTemplate是jedis的实现类 -->
+    <bean id="jedisTemplate" class="com.rabbit.util.RedisTemplate">
+        <constructor-arg index="0" ref="jedisPool"/>
     </bean>
 </beans>

@@ -1,7 +1,6 @@
 package com.rabbit.test;
 
 import com.rabbit.util.RabbitUtil;
-import com.rabbit.util.RedisLock;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +9,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {
+        "classpath:/spring/root-context.xml",
         "classpath:/spring/rabbit-product.xml",
         "classpath:/spring/rabbit-context.xml",
         "classpath:/spring/redis-context.xml"

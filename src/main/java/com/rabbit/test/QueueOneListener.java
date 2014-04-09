@@ -1,8 +1,9 @@
 package com.rabbit.test;
 
 import com.rabbit.ActionInterface.RedisNoResultAction;
+import com.rabbit.annotation.RedisLock;
 import com.rabbit.util.RedisKeys;
-import com.rabbit.util.RedisLock;
+import com.rabbit.util.RedisLockExecute;
 import com.rabbit.util.RedisLockModel;
 import com.rabbit.util.RedisTemplate;
 import org.junit.Before;
@@ -24,7 +25,7 @@ public class QueueOneListener{
     @Before
     public void setUp(){
         //销毁所有已经创建的锁
-        RedisLock.destructionLocks(redisTemplate);
+        RedisLockExecute.destructionLocks(redisTemplate);
     }
 
     public void listenOne(Object foo) {
@@ -52,10 +53,10 @@ public class QueueOneListener{
      */
     public void sendRedis(final Object foo){
         //这个是针对分布式环境下的锁机制
-        RedisLockModel redisLockModel = RedisLock.acquireLock(redisTemplate , RedisKeys.REDIS_TEST, 1000, (int)TimeUnit.SECONDS.toSeconds(10));
+        RedisLockModel redisLockModel = RedisLockExecute.acquireLock(redisTemplate, RedisKeys.REDIS_TEST, 1000, (int) TimeUnit.SECONDS.toSeconds(10));
 
         try{
-            if(RedisLock.ACQUIRE_RESULT(redisLockModel)){
+            if(RedisLockExecute.ACQUIRE_RESULT(redisLockModel)){
                 redisTemplate.execute(new RedisNoResultAction() {
                     @Override
                     public void actionNoResult(Jedis jedis) {
@@ -69,7 +70,21 @@ public class QueueOneListener{
             log.error("send Redis failed , error={}", e);
         }finally {
             //释放锁
-            //RedisLock.releaseLock(redisTemplate, redisLockModel);
+            RedisLockExecute.releaseLock(redisTemplate, redisLockModel);
+        }
+    }
+
+    @RedisLock(redisKeys = RedisKeys.REDIS_TEST , maxWait = 10, expiredTime = 1000)
+    public void testRedisAnnotation(final Object foo){
+        try{
+            redisTemplate.execute(new RedisNoResultAction() {
+                @Override
+                public void actionNoResult(Jedis jedis) {
+                    jedis.lpush("sendRedis:" , foo.toString());
+                }
+            });
+        } catch (Exception e){
+            log.error("send Redis failed , error={}", e);
         }
     }
 }

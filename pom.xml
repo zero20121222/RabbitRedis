@@ -126,6 +126,7 @@
             <version>${commons-io.version}</version>
         </dependency>
 
+        <!-- Spring Aop自定义注解 -->
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjrt</artifactId>
@@ -209,7 +210,6 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
-            <scope>test</scope>
         </dependency>
 
         <dependency>

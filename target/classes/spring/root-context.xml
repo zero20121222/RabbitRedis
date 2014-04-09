@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+    这个是主要用于测试Spring Aop的支持自定义注解的操作测试类
+-->
 
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:aop="http://www.springframework.org/schema/aop"
@@ -10,28 +13,13 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
 
-
-    <!-- register spring bean validator -->
-    <context:component-scan base-package="com.rabbit.test" />
+    <!-- spring注解的支持 -->
     <context:annotation-config />
+    <context:component-scan base-package="com.annotation.* , com.rabbit.*"/>
 
-    <!-- load properties -->
+    <!-- 加载配置文件 -->
     <util:properties id="app" location="classpath:app.properties"/>
-    <!-- aop support -->
+
+    <!-- 提供Spring Aop的支持 -->
     <aop:aspectj-autoproxy/>
-    <!-- use annotation to drive schedule task -->
-    <task:annotation-driven/>
-
-
-    <!-- import global application context
-    <import resource="classpath*:/spring/redis-context.xml"/>
-     -->
-
-    <!-- 添加rabbit的配置文件管理 -->
-    <import resource="classpath*:/spring/rabbit-product.xml"/>
-    <!-- import resources depend on different profile
-    <beans profile="dev">
-        <import resource="classpath*:/spring/mysql-persistence-context.xml"/>
-    </beans>
-     -->
 </beans>

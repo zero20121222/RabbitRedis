@@ -99,9 +99,11 @@
       <file leaf-file-name="QueueOneListener.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rabbit/test/QueueOneListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="41" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.4940978" vertical-offset="507" max-vertical-offset="1780">
+            <state line="88" column="4" selection-start="2742" selection-end="2742" vertical-scroll-proportion="0.89881957" vertical-offset="1167" max-vertical-offset="1840">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2429#2636#0" expanded="true" />
+                <element signature="e#2621#2622#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -240,7 +242,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1367" />
+    <option name="x" value="-2733" />
     <option name="y" value="-7" />
     <option name="width" value="1368" />
     <option name="height" value="776" />
@@ -1281,12 +1283,12 @@
       <workItem from="1396756948125" duration="14934000" />
       <workItem from="1396867547010" duration="6086000" />
       <workItem from="1396920649556" duration="9494000" />
-      <workItem from="1397015319206" duration="1552000" />
+      <workItem from="1397015319206" duration="2674000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94917000" />
+    <option name="totallyTimeSpent" value="96039000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1309,7 +1311,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1367" y="-7" width="1368" height="776" extended-state="6" />
+    <frame x="-2733" y="-7" width="1368" height="776" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1679,9 +1681,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rabbit/test/QueueOneListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="41" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.4940978" vertical-offset="507" max-vertical-offset="1780">
+        <state line="88" column="4" selection-start="2742" selection-end="2742" vertical-scroll-proportion="0.89881957" vertical-offset="1167" max-vertical-offset="1840">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2429#2636#0" expanded="true" />
+            <element signature="e#2621#2622#0" expanded="true" />
           </folding>
         </state>
       </provider>

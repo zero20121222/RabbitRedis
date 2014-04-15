@@ -15,6 +15,10 @@ import redis.clients.jedis.Jedis;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 用于提供Rabbit监听接口层
+ * Created by Michael Zhao on 14-4-1.
+ */
 @Component
 public class QueueOneListener{
     @Autowired
